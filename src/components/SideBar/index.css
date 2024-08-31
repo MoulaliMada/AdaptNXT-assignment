@@ -13,20 +13,22 @@
     border: none;
     font-size: 15px;
     padding: 0px;
+    color: rgb(77, 74, 74);
 }
 .options{
     padding: 0px;
     font-size: 10px;
 }
 .nav-link{
-    color: black;
+    color: rgb(65, 63, 63);
     text-decoration: none;
+    font-weight: 600;
     
 }
 .active-nav-item{
     color: rgb(127, 8, 127);
     font-weight: 450;
-    background-color: rgb(242, 156, 242);;
+    background-color: rgb(236, 195, 236);;
     font-size: 15PX;
     padding: 8px;
     padding-left: 10px;

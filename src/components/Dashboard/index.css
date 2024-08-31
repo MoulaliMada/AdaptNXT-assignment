@@ -1,0 +1,53 @@
+.dashbord{
+    display: flex;
+    
+}
+.charts-container{
+    background-color: #efebeb;
+    padding-left: 15px;
+    width: 100%;
+    height: 100vh;
+}
+.dasboard-heading{
+    background-color: white;
+    color: rgb(173, 28, 173);
+    font-size: 17px;
+    font-weight: 500;
+    width: 120px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 0px;
+}
+.line-chart{
+    background-color: white;
+    width: 570px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 350px;
+
+}
+.linechart-paragraph{
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px;
+    width: 200px;
+    padding-top: 10px;
+}
+.linechart{
+    font-size: 12px;
+    
+}
+.alert-circle{
+    font-size: 17px;
+    transform: rotate(180deg);
+}
+.linechart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

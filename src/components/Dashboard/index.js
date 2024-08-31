@@ -1,3 +1,4 @@
+import { IoAlertCircleOutline } from "react-icons/io5";
 import {
   LineChart,
   Line,
@@ -33,46 +34,62 @@ const data2 = [
 
 const Dashboard = () => {
   const yAxisTickFormatter = (value) => {
-    console.log(value)
+    console.log(value);
     return `${value / 1000}k`;
   };
   return (
-    <div>
+    <div className="dashbord">
       <SideBar />
-      <div>
-        <LineChart
-          width={800}
-          height={400}
-          data={data2}
-          margin={{
-            top: 50,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis yAxisId="left" tickFormatter={yAxisTickFormatter} ticks={[0, 400, 800, 1200,1600]}/>
-          <YAxis yAxisId="right" orientation="right" />
-          <Tooltip />
-          <Legend />
-          <Line
-            yAxisId="left"
-            type="monotone"
-            dataKey="sales"
-            stroke="#066B6F"
-            activeDot={{ r: 9 }}
-            
-          />
-          <Line
-            yAxisId="right"
-            type="monotone"
-            dataKey="orders"
-            stroke="#EA8212"
-            interval={2}
-          />
-        </LineChart>
+      <div className="charts-container">
+        <h1 className="dasboard-heading">Dashboard</h1>
+        <div className="line-chart">
+          <p className="linechart-paragraph">
+            Sales vs Orders{" "}
+            <span>
+              <IoAlertCircleOutline className="alert-circle" />
+            </span>
+          </p>
+          <hr />
+          <div className="linechart-container">
+            <LineChart
+              width={600}
+              height={300}
+              data={data2}
+              margin={{
+                top: 20,
+                right: 30,
+                left: 10,
+                bottom: 0,
+              }}
+              className="linechart"
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis
+                yAxisId="left"
+                tickFormatter={yAxisTickFormatter}
+                ticks={[0, 400, 800, 1200, 1600]}
+              />
+              <YAxis yAxisId="right" orientation="right" />
+              <Tooltip />
+              <Legend />
+              <Line
+                yAxisId="left"
+                type="monotone"
+                dataKey="sales"
+                stroke="#066B6F"
+                activeDot={{ r: 9 }}
+              />
+              <Line
+                yAxisId="right"
+                type="monotone"
+                dataKey="orders"
+                stroke="#EA8212"
+                interval={2}
+              />
+            </LineChart>
+          </div>
+        </div>
       </div>
     </div>
   );
