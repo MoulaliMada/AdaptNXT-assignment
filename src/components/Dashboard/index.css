@@ -51,3 +51,46 @@
     justify-content: center;
     align-items: center;
 }
+.chart-container{
+    display: flex;
+    align-items: center;
+}
+.piechart{
+    background-color: white;
+    width: 260px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 15px;
+    height: 350px;
+}
+.piechart-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.dot1{
+    width: 12px;
+    height: 12px;
+    background-color: #DC5657;
+    border-Radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+.dot2{
+    background-color: #08F3BC;
+}
+.pichart-formates{
+    display: flex;
+    align-items: center;
+}
+.pichart-label-line{
+    font-size: 12px;
+}
+.pichart-label-line-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
