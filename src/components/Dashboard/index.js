@@ -42,7 +42,6 @@ const data2 = [
 
 const Dashboard = () => {
   const yAxisTickFormatter = (value) => {
-    console.log(value);
     return `${value / 1000}k`;
   };
   const renderCustomizedLabel = ({

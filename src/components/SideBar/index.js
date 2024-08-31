@@ -4,10 +4,12 @@ import "./index.css";
 
 const SideBar = () => {
   const [activeTab, setActiveTab] = useState("Dashboard");
+  
 
   const onclickNavItem = (event) => {
     setActiveTab(event.target.innerText);
   };
+
 
   return (
     <div className="sidbar-container">
